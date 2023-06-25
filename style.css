@@ -1,0 +1,95 @@
+*{margin: 0; padding: 0;}
+
+.container{
+    margin: 0 auto;
+    width: 1100px;
+    border: 1px solid #ddd;
+    height: 600px;
+}
+.col{
+    float: left;   
+}
+
+#nowBox{
+    text-align: center;
+}
+.timeMenu{
+     
+    padding: 5px;
+    margin-left: 175px;
+}
+
+.timeBox{
+     
+    width: 90px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid green;
+    margin-right: 2px;
+    display: inline-block;
+    padding: 2px;
+     
+}
+
+.dayMenu{
+    height: 300px;
+    width: 165px;
+    
+    padding: 5px;
+}
+.dayBox{
+    
+    width: 150px;
+    margin: 2px;
+    padding:5px;
+    font-size: 20px;
+    background-color: aqua;
+     
+}
+
+
+.roomMenu{
+    width: 600px;
+    height: 290px;
+    padding: 10px;
+    background: blue;
+}
+.roomBox{
+    
+    width:110px;
+    height:35px;
+    border: 2px solid #fff;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    color:white ;
+}
+.findArea{
+
+    height: 310px;
+    width: 305px;
+     
+}
+.findBox{
+    display: block;
+    font-size: 20px;
+
+    margin: 10px;
+}
+.sub_btn{
+    padding: 10px;
+    background-color: #ddd;
+    color: green;
+    border: 1px solid #cc0000;
+    float: right;
+    cursor: pointer;
+}
+.EmptyClassRoom{
+    width: 1100px;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    background-color: yellow;
+}
