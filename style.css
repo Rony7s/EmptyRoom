@@ -9,9 +9,17 @@
 .col{
     float: left;   
 }
-
-#nowBox{
+.University{
+    font-size: 23px;
+    margin-top: 5px;
     text-align: center;
+    text-transform: uppercase;
+    color: rgb(221, 9, 44);
+}
+.nowBox{
+    text-align: center;
+    text-transform: uppercase;
+    color: green;
 }
 .timeMenu{
      
@@ -23,12 +31,18 @@
      
     width: 90px;
     font-size: 14px;
+    line-height: 25px;
     text-align: center;
-    border: 1px solid green;
+    border: 1px solid #ddd;
+    color: #FFFFFF;
+    background-color: green;
     margin-right: 2px;
     display: inline-block;
     padding: 2px;
      
+}
+.timeBox:hover{
+    background: red;
 }
 
 .dayMenu{
@@ -41,12 +55,15 @@
     
     width: 150px;
     margin: 2px;
-    padding:5px;
+    line-height: 35px;
     font-size: 20px;
-    background-color: aqua;
+    color:#FFFFFF;
+    background-color: green;
      
 }
-
+.dayBox:hover{
+    background: red;
+}
 
 .roomMenu{
     width: 600px;
@@ -67,29 +84,43 @@
     color:white ;
 }
 .findArea{
-
     height: 310px;
-    width: 305px;
+    width: 295px;
+    padding: 5px;
+    text-align: center;
      
 }
-.findBox{
-    display: block;
-    font-size: 20px;
 
-    margin: 10px;
+.option_menu {
+    width: 200px;
+    height: 30px;
+}
+.option_menu option{
+    font: 20px;
+    color: #FFFFFF;
+    background-color: green;
+    line-height: 25px;
+   
+    
 }
 .sub_btn{
-    padding: 10px;
     background-color: #ddd;
     color: green;
     border: 1px solid #cc0000;
-    float: right;
+    width: 200px;
+    line-height: 25px;
     cursor: pointer;
 }
+.imgLogo{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 216px;
+}
 .EmptyClassRoom{
-    width: 1100px;
+    width: 1080px;
     display: block;
     overflow: hidden;
     text-align: center;
-    background-color: yellow;
+    background-color: #4d9a4d;
+    padding: 10px;
 }
