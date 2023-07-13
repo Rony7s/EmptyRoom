@@ -90,6 +90,17 @@
     text-align: center;
      
 }
+.seeRoutine{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.seeRoutine:hover{
+    color: green;
+}
 
 .option_menu {
     width: 200px;
