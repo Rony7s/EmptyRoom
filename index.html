@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/30334499?v=4">
-    <title>BDU Room</title>
+    <title>BDU Room And Routine</title>
 </head>
 <body>
     <div class="container">
@@ -16,8 +16,8 @@
             <h2 id="nowHour">08:00-8:50AM</h2>
         </div>
             
-         
         <br>
+        <!-- this is hour menu start -->
         <div class="row timeMenu">
             <button class="timeBox" id="btn8">8:00-8:50</button>
             <button class="timeBox" id="btn9">9:00-9:50</button>
@@ -30,6 +30,7 @@
             <button class="timeBox" id="btn4">4:00-4:50</button>
         </div>
         <br>
+        <!-- this is day menu start -->
         <div class="row">
             <div class="col dayMenu">
                 <button class="dayBox" id="Saturday">Saturday</button>
@@ -41,6 +42,8 @@
                 <button class="dayBox" id="Friday">Friday</button>
                 
             </div>
+
+            <!-- this is room number area start -->
             <div class="col roomMenu">
                 <div class="roomBox" id="R5001">R-5001</div>
                 <div class="roomBox" id="R5002">R-5002</div>
@@ -63,45 +66,10 @@
                 <div class="roomBox" id="R1004">ROOM</div>
             </div>
             <div class="col findArea">
-
-                <!-- //for searching -->
-                <!-- 
-                <div class="findBox selectD">
-                    <p>Select day</p>
-                    
-                    <select class="option_menu" name="day" id="day_s">
-                        <option value="">Sunday</option>
-                        <option value="">Monday</option>
-                        <option value="">Tuesday</option>
-                        <option value="">Wednesday</option>
-                        <option value="">Thursday</option>
-                        <option value="">Friday</option>
-                        <option value="">Saturday</option> 
-                    </select>
-                 
-                    <p>Select Hour</p>
-                     
-                    <select class="option_menu" name="day" id="hour_s">
-                        <option value="">8:00-8:50</option>
-                        <option value="">9:00-9:50</option>
-                        <option value="">10:00-10:50</option>
-                        <option value="">11:00-11:50</option>
-                        <option value="">12:00-12:50</option>
-                        <option value="">1:00-1:50</option>
-                        <option value="">2:00-2:50</option>
-                        <option value="">3:00-3:50</option>
-                        <option value="">4:00-4:50</option>
-                    </select>
-                    <br><br>
-                    <button class="findBox sub_btn">Searching Room</button>
-                </div>
-
-                  -->
-                <img class = "imgLogo" src="http://www.bdu.ac.bd/assets/images/logo/logo1.png" alt="">
-                
+                <img class = "imgLogo" src="http://www.bdu.ac.bd/assets/images/logo/logo1.png" alt="BDU">
                 <br>
-                <div class="roomBox" id="" style="background: green;">Empty</div>
-                <div class="roomBox" id="" style="background: red;">Teaching</div>
+                <div class="emptyRoom">Empty</div>
+                <div class="teachingRoom">Teaching</div>
                 <br>
                 <p>Select button Day with hour</p>
                 <br>
@@ -109,18 +77,21 @@
             </div>
         </div>
         <br>
+        <!-- footer start -->
         <div class="row EmptyClassRoom">
             <h2>Empty Class Room</h2>
-            <a style="text-decoration: none; color: white;" href="https://www.facebook.com/EdTech4"><h3>Rony Ahmmed BDU-EdTech</h3></a>
-            
+            <a style="text-decoration: none; color: white;" href="https://www.facebook.com/EdTech4"><h3>Develop by Rony Ahmmed BDU-EdTech</h3></a>
             <h5>bdu.rony@gmail.com</h5>
-            
-            <p>All Rights will be Reserved</p>
+            <p>Copyright © 2023 All Rights Reserved.</p>
         </div>
     </div>
 
-
-
+    <!-- This javascript file link -->
     <script src="roomControll.js"></script>
+<!-- 
+    Rony Ahmmed EdTech-BDU
+    bdu.rony@gmail.com
+ -->
 </body>
 </html>
+

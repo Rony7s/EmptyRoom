@@ -1,12 +1,19 @@
-*{margin: 0; padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background-color: #1e7070;
+}
 
 .container{
     margin: 0 auto;
     width: 1100px;
-    border: 1px solid #ddd;
-    height: 600px;
     padding-top: 5px;
-    background-color: 	#ffffff;
+    background-color:#FFFFFF;
 }
 .col{
     float: left;   
@@ -18,16 +25,21 @@
     text-transform: uppercase;
     color: red;
     border: 2px solid green;
-    padding: 15px;
+    padding: 20px;
+    background-color: pink;
+    display: block;
    
 }
 .nowBox{
+    width: 500px;
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     color: red;
     border: 2px solid #1e7070;
     border-radius: 20px;
     font-size: 15px;
+    padding: 5px;
      
 }
 .timeMenu{
@@ -99,6 +111,28 @@
     text-align: center;
      
 }
+.emptyRoom{
+    background-color: green;
+    width:100px;
+    height:35px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    color:white ;
+}
+.teachingRoom{
+    background-color: red;
+    width:120px;
+    height:35px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    color:white ;
+}
 .seeRoutine{
     font-size: 15px;
     text-align: center;
@@ -126,16 +160,8 @@
    
     
 }
-.sub_btn{
-    background-color: #ddd;
-    color: green;
-    border: 1px solid #cc0000;
-    width: 200px;
-    line-height: 25px;
-    cursor: pointer;
-}
 .imgLogo{
-    margin-top: 40px;
+    margin-top: 25px;
     margin-bottom: 30px;
     width: 216px;
 }

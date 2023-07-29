@@ -74,20 +74,20 @@ function routineShow(department , session , group){
 
 
     
-    EdTech31.style.display="none";
-    EdTech32.style.display="none";
+     
 
-   /* 
+   
     EdTech11.style.display="none";
     EdTech12.style.display="none";
     EdTech21.style.display="none";
     EdTech22.style.display="none";
     EdTech31.style.display="none";
     EdTech32.style.display="none";
+
+    
     EdTech41.style.display="none";
     EdTech42.style.display="none";
-
-    */
+    
 
 
     IRE11.style.display="none";
@@ -195,16 +195,16 @@ function routineShow(department , session , group){
  function selectShowButtonRoutine( department , session , group){
 
 //department session group
-    call_EdTech.style.backgroundColor = "#2182cf";
-    call_IRE.style.backgroundColor = "#2182cf"; 
+    call_EdTech.style.backgroundColor = "green";
+    call_IRE.style.backgroundColor = "green";
 
-    call_s2018.style.backgroundColor = "#5cc8d7"; 
-    call_s2019.style.backgroundColor = "#5cc8d7"; 
-    call_s2020.style.backgroundColor = "#5cc8d7"; 
-    call_s2021.style.backgroundColor = "#5cc8d7"; 
+    call_s2018.style.backgroundColor ="green";
+    call_s2019.style.backgroundColor = "green";
+    call_s2020.style.backgroundColor = "green"; 
+    call_s2021.style.backgroundColor = "green"; 
 
-    call_G_1.style.backgroundColor = "#e7c092";
-    call_G_2.style.backgroundColor = "#e7c092";
+    call_G_1.style.backgroundColor = "green";
+    call_G_2.style.backgroundColor = "green";
     
     if( department==0 )
         call_EdTech.style.backgroundColor = "red"; 
