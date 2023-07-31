@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background-color: #1e7070;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1100px;
+    padding-top: 5px;
+    background-color:#FFFFFF;
+}
+.col{
+    float: left;   
+}
+.University{
+    font-size: 23px;
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    border: 2px solid green;
+    padding: 20px;
+    background-color: pink;
+    display: block;
+   
+}
+.nowBox{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    border: 2px solid #1e7070;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 5px;
+     
+}
+.timeMenu{
+     
+    padding: 5px;
+    margin-left: 175px;
+}
+
+.timeBox{
+     
+    width: 90px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #FFFFFF;
+    background-color: green;
+    margin-right: 2px;
+    display: inline-block;
+    padding: 2px;
+     
+}
+.timeBox:hover{
+    background: red;
+}
+
+.dayMenu{
+    height: 300px;
+    width: 165px;
+    
+    padding: 5px;
+}
+.dayBox{
+    
+    width: 150px;
+    margin: 2px;
+    line-height: 35px;
+    font-size: 20px;
+    color:#FFFFFF;
+    background-color: green;
+     
+}
+.dayBox:hover{
+    background: red;
+}
+
+.roomMenu{
+    width: 600px;
+    height: 290px;
+    padding: 10px;
+    background: #1e7070;
+}
+.roomBox{
+    
+    width:110px;
+    height:35px;
+    border: 2px solid #fff;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    color:white ;
+}
+.findArea{
+    height: 310px;
+    width: 295px;
+    padding: 5px;
+    text-align: center;
+     
+}
+.emptyRoom{
+    background-color: green;
+    width:100px;
+    height:35px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    color:white ;
+}
+.teachingRoom{
+    background-color: red;
+    width:120px;
+    height:35px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    color:white ;
+}
+.seeRoutine{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: green;
+    width: 200px;
+
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: 30;
+
+}
+@keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+  }
+.seeRoutine:hover{
+     
+    background-color: red;
+}
+
+.option_menu {
+    width: 200px;
+    height: 30px;
+}
+.option_menu option{
+    font: 20px;
+    color: #FFFFFF;
+    background-color: green;
+    line-height: 25px;
+   
+    
+}
+.imgLogo{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    width: 216px;
+}
+.EmptyClassRoom{
+    width: 1080px;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f26d21 ;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="University" >Bangabandhu Sheikh Mujibur Rahman Digital University, Bangladesh</h1>
+        <br>
+        <div class="nowBox">
+            <h2 id="nowDay">Saturday</h2>
+            <h2 id="nowHour">08:00-8:50AM</h2>
+        </div>
+            
+        <br>
+        <!-- this is hour menu start -->
+        <div class="row timeMenu">
+            <button class="timeBox" id="btn8">8:00-8:50</button>
+            <button class="timeBox" id="btn9">9:00-9:50</button>
+            <button class="timeBox" id="btn10">10:00-10:50</button>
+            <button class="timeBox" id="btn11">11:00-11:50</button>
+            <button class="timeBox" id="btn12">12:00-12:50</button>
+            <button class="timeBox" id="btn1">1:00-1:50</button>
+            <button class="timeBox" id="btn2">2:00-2:50</button>
+            <button class="timeBox" id="btn3">3:00-3:50</button>
+            <button class="timeBox" id="btn4">4:00-4:50</button>
+        </div>
+        <br>
+        <!-- this is day menu start -->
+        <div class="row">
+            <div class="col dayMenu">
+                <button class="dayBox" id="Saturday">Saturday</button>
+                <button class="dayBox" id="Sunday">Sunday</button>
+                <button class="dayBox" id="Monday">Monday</button>
+                <button class="dayBox" id="Tuesday">Tuesday</button>
+                <button class="dayBox" id="Wednesday">Wednesday</button>
+                <button class="dayBox" id="Thursday">Thursday</button>
+                <button class="dayBox" id="Friday">Friday</button>
+                
+            </div>
+
+            <!-- this is room number area start -->
+            <div class="col roomMenu">
+                <div class="roomBox" id="R5001">R-5001</div>
+                <div class="roomBox" id="R5002">R-5002</div>
+                <div class="roomBox" id="L5003">L-5701</div>
+                <div class="roomBox" id="R5004">ROOM</div>
+
+                <div class="roomBox" id="R4001">R-4001</div>
+                <div class="roomBox" id="R4002">R-4002</div>
+                <div class="roomBox" id="L4701">L-4701</div>
+                <div class="roomBox" id="R4004">ROOM</div>
+
+                <div class="roomBox" id="R2001">R-2001</div>
+                <div class="roomBox" id="R2002">R-2002</div>
+                <div class="roomBox" id="L2701">L-2701</div>
+                <div class="roomBox" id="R2004">ROOM</div>
+
+                <div class="roomBox" id="R1001">R-1001</div>
+                <div class="roomBox" id="R1002">R-1002</div>
+                <div class="roomBox" id="L1003">L-1003</div>
+                <div class="roomBox" id="R1004">ROOM</div>
+            </div>
+            <div class="col findArea">
+                <img class = "imgLogo" src="http://www.bdu.ac.bd/assets/images/logo/logo1.png" alt="BDU">
+                <br>
+                <div class="emptyRoom">Empty</div>
+                <div class="teachingRoom">Teaching</div>
+                <br>
+                <p>Select button Day with hour</p>
+                <br>
+                <a class="seeRoutine" href="bduR.html">See All Class Routine</a>
+            </div>
+        </div>
+        <br>
+        <!-- footer start -->
+        <div class="row EmptyClassRoom">
+            <h2>Empty Class Room</h2>
+            <a style="text-decoration: none; color: white;" href="https://www.facebook.com/EdTech4"><h3>Developed By Rony Ahmmed BDU-EdTech</h3></a>
+            <h5>bdu.rony@gmail.com</h5>
+            <p>Copyright © 2023 All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
