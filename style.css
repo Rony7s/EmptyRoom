@@ -26,7 +26,7 @@ body{
     color: red;
     border: 2px solid green;
     padding: 20px;
-    background-color: pink;
+    background-color: #ddd;
     display: block;
    
 }
@@ -69,7 +69,7 @@ body{
 .dayMenu{
     height: 300px;
     width: 165px;
-    
+    margin-top: -35px;
     padding: 5px;
 }
 .dayBox{
@@ -84,6 +84,16 @@ body{
 }
 .dayBox:hover{
     background: red;
+}
+.dayBoxNow{
+    text-decoration: none;
+    height: 35px;
+    width: 143px;
+    display: inline-table;
+    color: #e1e6ff;
+    background-color: green;
+    font-size: 24px;
+    border: 2px solid#ddd;
 }
 
 .roomMenu{
