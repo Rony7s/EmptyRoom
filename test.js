@@ -1,4 +1,3 @@
-console.log(123);
 
 function getDayOfWeekNumber() {
     const currentDate = new Date();
@@ -8,7 +7,6 @@ function getDayOfWeekNumber() {
 
 const dayOfWeekNumber = getDayOfWeekNumber();
 console.log(dayOfWeekNumber); // This will log the number representing the current day of the week (0 to 6).
-
 
 
 function getTimeSlot() {
@@ -26,10 +24,6 @@ function getTimeSlot() {
   const timeSlot = getTimeSlot();
   console.log(timeSlot); // This will log the time slot number based on the current time.
   
-
-
-
-
 
 
 

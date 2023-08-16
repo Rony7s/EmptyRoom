@@ -3,210 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    
-}
-body{
-    background-color: #1e7070;
-}
-
-.container{
-    margin: 0 auto;
-    width: 1100px;
-    padding-top: 5px;
-    background-color:#FFFFFF;
-}
-.col{
-    float: left;   
-}
-.University{
-    font-size: 23px;
-    margin-top: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    color: red;
-    border: 2px solid green;
-    padding: 20px;
-    background-color: pink;
-    display: block;
-   
-}
-.nowBox{
-    width: 500px;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: uppercase;
-    color: red;
-    border: 2px solid #1e7070;
-    border-radius: 20px;
-    font-size: 15px;
-    padding: 5px;
-     
-}
-.timeMenu{
-     
-    padding: 5px;
-    margin-left: 175px;
-}
-
-.timeBox{
-     
-    width: 90px;
-    font-size: 14px;
-    line-height: 25px;
-    text-align: center;
-    border: 1px solid #ddd;
-    color: #FFFFFF;
-    background-color: green;
-    margin-right: 2px;
-    display: inline-block;
-    padding: 2px;
-     
-}
-.timeBox:hover{
-    background: red;
-}
-
-.dayMenu{
-    height: 300px;
-    width: 165px;
-    margin-top: -35px;
-    padding: 5px;
-}
-.dayBox{
-    
-    width: 150px;
-    margin: 2px;
-    line-height: 35px;
-    font-size: 20px;
-    color:#FFFFFF;
-    background-color: green;
-     
-}
-.dayBox:hover{
-    background: red;
-}
-
-.dayBoxNow{
-    text-decoration: none;
-    height: 35px;
-    width: 143px;
-    display: inline-table;
-    color: #e1e6ff;
-    background-color: green;
-    font-size: 24px;
-    border: 2px solid#ddd;
-}
-
-.roomMenu{
-    width: 600px;
-    height: 290px;
-    padding: 10px;
-    background: #1e7070;
-}
-.roomBox{
-    
-    width:110px;
-    height:35px;
-    border: 2px solid #fff;
-    margin: 5px;
-    padding: 10px;
-    font-size: 30px;
-    display: inline-block;
-    text-align: center;
-    color:white ;
-}
-.findArea{
-    height: 310px;
-    width: 295px;
-    padding: 5px;
-    text-align: center;
-     
-}
-.emptyRoom{
-    background-color: green;
-    width:100px;
-    height:35px;
-    margin: 5px;
-    padding: 10px;
-    font-size: 30px;
-    display: inline-block;
-    text-align: center;
-    color:white ;
-}
-.teachingRoom{
-    background-color: red;
-    width:120px;
-    height:35px;
-    margin: 5px;
-    padding: 10px;
-    font-size: 30px;
-    display: inline-block;
-    text-align: center;
-    color:white ;
-}
-.seeRoutine{
-    font-size: 15px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    border: 1px solid #ddd;
-    padding: 5px;
-    background: green;
-    width: 200px;
-
-    position: relative;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-iteration-count: 30;
-
-}
-@keyframes example {
-    0%   {background-color:red;}
-    25%  {background-color:yellow;}
-    50%  {background-color:blue;}
-    75%  {background-color:green;}
-    100% {background-color:red;}
-  }
-.seeRoutine:hover{
-     
-    background-color: red;
-}
-
-.option_menu {
-    width: 200px;
-    height: 30px;
-}
-.option_menu option{
-    font: 20px;
-    color: #FFFFFF;
-    background-color: green;
-    line-height: 25px;
-   
-    
-}
-.imgLogo{
-    margin-top: 25px;
-    margin-bottom: 30px;
-    width: 216px;
-}
-.EmptyClassRoom{
-    width: 1080px;
-    display: block;
-    overflow: hidden;
-    text-align: center;
-    background-color: #f26d21b0 ;
-    padding: 10px;
-}
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="http://www.bdu.ac.bd/assets/images/logo/logo1.png">
+    <title>BDU Room And Routine</title>
 </head>
 <body>
+    <!-- Main menu start -->
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html">Room</a>
+            <a href="bduR.html">Routine</a>
+            <a href="https://bdu.ac.bd">BDU</a>
+            <div class="dropdown">
+              <button class="dropbtn">Teacher
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="teacherEdTech.html">EdTech</a>
+                <a href="teacherIRE.html">IRE</a>
+              </div>
+            </div>
+            <a href="link.html">QR Code</a>
+          </div>
+    </div>
+
+    <!-- Room info start -->
     <div class="container">
         <h1 class="University" >Bangabandhu Sheikh Mujibur Rahman Digital University, Bangladesh</h1>
         <br>
@@ -232,7 +54,7 @@ body{
         <!-- this is day menu start -->
         <div class="row">
             <div class="col dayMenu">
-                <button  id="dayBox"><a class="dayBoxNow" href="index.html">Previous</a>
+                <button  id="dayBox"><a class="dayBoxNow" href="index.html">previous</a> 
                 <button class="dayBox" id="Saturday">Saturday</button>
                 <button class="dayBox" id="Sunday">Sunday</button>
                 <button class="dayBox" id="Monday">Monday</button>
@@ -265,6 +87,7 @@ body{
                 <div class="roomBox" id="L1003">L-1003</div>
                 <div class="roomBox" id="R1004">ROOM</div>
             </div>
+            <!-- University logo right site start -->
             <div class="col findArea">
                 <img class = "imgLogo" src="http://www.bdu.ac.bd/assets/images/logo/logo1.png" alt="BDU">
                 <br>
@@ -278,7 +101,7 @@ body{
         </div>
         <br>
         <!-- footer start -->
-        <div class="row EmptyClassRoom">
+        <div class="row footer_area">
             <h2>Empty Class Room</h2>
             <a style="text-decoration: none; color: white;" href="https://www.facebook.com/EdTech4"><h3>Developed By Rony Ahmmed BDU-EdTech</h3></a>
             <h5>bdu.rony@gmail.com</h5>
@@ -286,6 +109,12 @@ body{
         </div>
     </div>
 
+    <!-- This javascript file link -->
     <script src="test.js"></script>
+<!-- 
+    Rony Ahmmed EdTech-BDU
+    bdu.rony@gmail.com
+ -->
 </body>
 </html>
+

@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Tstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Faculty List - IRE Department</title>
+    <style>
+table, th, td {
+    border: 1px solid red;
+    border-collapse: collapse;
+  }
+  
+    </style>
+     
 </head>
 
 <body>
@@ -16,26 +25,31 @@
             <a href="bduR.html">Routine</a>
             <a href="https://bdu.ac.bd">BDU</a>
             <div class="dropdown">
-              <button class="dropbtn">Teacher
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="teacherEdTech.html">EdTech</a>
-                <a href="teacherIRE.html">IRE</a>
-              </div>
+                <button class="dropbtn">Teacher
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="teacherEdTech.html">EdTech</a>
+                    <a href="teacherIRE.html">IRE</a>
+                </div>
             </div>
-            <a href="link.jpg">QR Code</a>
-          </div>
+            <a href="link.html">QR Code</a>
+            <input style="float: right; height: 30px; margin-top: 5px;" id="myInput" type="text" placeholder="Search..">
+        </div>
     </div>
-    <header  class="container">
+    <header class="container Faculty">
         <h1>Department of IRE</h1>
         <h2>Faculty List</h2>
     </header>
 
 
     <section class="full-time container">
-        <h3>Full Time</h3>
-        <table>
+        <table class="t_table">
+            <tr>
+                <td colspan="5">
+                  <h1>Full Time</h1>
+                </td>
+            </tr>
             <tr>
                 <th>SL</th>
                 <th>Teacher Name</th>
@@ -44,19 +58,24 @@
                 <th>Email/Phone</th>
             </tr>
             <tr>
-                <td>1</td>
+                <td>empty</td>
                 <td>empty</td>
                 <td>empty</td>
                 <td>empty</td>
                 <td>empty</td>
             </tr>
+           
         </table>
     </section>
-<br>
-<br>
+    <br>
+    <br>
     <section class="part-time container">
-        <h3>Part Time</h3>
-        <table>
+        <table  class="t_table">
+            <tr>
+                <td colspan="5">
+                  <h1>part Time</h1>
+                </td>
+            </tr>
             <tr>
                 <th>SL</th>
                 <th>Teacher Name</th>
@@ -64,16 +83,38 @@
                 <th>Email/Phone</th>
             </tr>
             <tr>
-                <td>1</td>
+                <td>empty</td>
                 <td>empty</td>
                 <td>empty</td>
                 <td>empty</td>
             </tr>
+            
         </table>
+        <br>
+        <br>
+
+        <!-- footer start -->
+        <div class="row footer_area">
+            <a style="text-decoration: none; color: white;" href="https://www.facebook.com/EdTech4">
+                <h3>Developed By Rony Ahmmed BDU-EdTech</h3>
+            </a>
+            <h5>bdu.rony@gmail.com</h5>
+            <p>Copyright © 2023 All Rights Reserved.</p>
+        </div>
+
     </section>
 
-    <br>
-    <br>
+    <script>
+        //jQuery for find teacher ...
+        $(document).ready(function () {
+                $("#myInput").on("keyup", function () {
+                    var value = $(this).val().toLowerCase();
+                    $(".t_table tr").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+    </script>
 </body>
 
 </html>
