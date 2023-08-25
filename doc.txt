@@ -1,6 +1,0 @@
-index html
-    bduR
-    test
-    teacher
-    QR code
-    style css
