@@ -48,6 +48,13 @@ document.getElementById("call_s2021").onclick = function(){
     session = 3;
     routineShow(department , session , group);
 
+}
+
+document.getElementById("call_s2022").onclick = function(){
+    document.getElementById("nowSession").innerText ="2022-23";
+    session = 4;
+    routineShow(department , session , group);
+
 } 
 
 
@@ -83,10 +90,11 @@ function routineShow(department , session , group){
     EdTech22.style.display="none";
     EdTech31.style.display="none";
     EdTech32.style.display="none";
-
-    
     EdTech41.style.display="none";
     EdTech42.style.display="none";
+
+    EdTech51.style.display="none";
+    EdTech52.style.display="none";
     
 
 
@@ -98,6 +106,9 @@ function routineShow(department , session , group){
     IRE32.style.display="none";
     IRE41.style.display="none";
     IRE42.style.display="none";
+
+    IRE51.style.display="none";
+    IRE52.style.display="none";
 
         
     //This is for show routine
@@ -142,6 +153,14 @@ function routineShow(department , session , group){
         EdTech42.style.display="block";
     }   
 
+    //EdTech 2022-23 G-1
+    if( department==0 && session==4 &&  group==0){
+        EdTech51.style.display="block";
+    }  
+    //EdTech 2022-23 G-2
+    if( department==0 && session==4 &&  group==1){
+        EdTech52.style.display="block";
+    }   
 
 
     //This is for show routine
@@ -183,6 +202,15 @@ function routineShow(department , session , group){
         IRE42.style.display="block";
     }  
 
+    //IRE 2022-23 G-1
+    if( department==1 && session==4 &&  group==0){
+        IRE51.style.display="block";
+    } 
+    //IRE 2021-22 G-2
+    if( department==1 && session==4 &&  group==1){
+        IRE52.style.display="block";
+    }  
+
 
     
 
@@ -202,6 +230,7 @@ function routineShow(department , session , group){
     call_s2019.style.backgroundColor = "green";
     call_s2020.style.backgroundColor = "green"; 
     call_s2021.style.backgroundColor = "green"; 
+    call_s2022.style.backgroundColor = "green"; 
 
     call_G_1.style.backgroundColor = "green";
     call_G_2.style.backgroundColor = "green";
@@ -220,6 +249,8 @@ function routineShow(department , session , group){
         call_s2020.style.backgroundColor = "red"; 
     if( session == 3 )
         call_s2021.style.backgroundColor = "red";
+    if( session == 4 )
+        call_s2022.style.backgroundColor = "red";
 
     if( group == 0)
         call_G_1.style.backgroundColor = "red"; 
