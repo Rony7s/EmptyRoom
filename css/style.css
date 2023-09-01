@@ -315,7 +315,7 @@ table, th, td {
 
 .underClass{
     width: 885px;
-    height: 130px;
+    height: 140px;
     padding: 5px;
     text-align: center;
     margin-left: -65px;
@@ -345,4 +345,14 @@ table, th, td {
 }
 
 /* ============================================ */
-
+.teachingOnline{
+    background-color: blue;
+    width:120px;
+    height:35px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    color:white ;
+}
