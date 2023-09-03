@@ -287,9 +287,10 @@ table, th, td {
 
 
   .linkImg{
-    height: 300px;
-    width: 300px;
-    margin-left: 380px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* start here class page edit ==================================================*/
