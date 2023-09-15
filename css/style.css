@@ -357,3 +357,37 @@ table, th, td {
     text-align: center;
     color:white ;
 }
+
+
+/* meet teacher ==================================================*/
+.teacherMenu{
+    width: 885px;
+    height: 400px;
+    padding: 10px;
+    background: #1e7070;
+}
+.teacherBox{
+    width:390px;
+    height:15px;
+    border: 2px solid #fff;
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+    
+    text-align: center;
+    color:white ;
+}
+.edtechT{
+    width: 440px;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+}
+
+.underTbox{
+    width: 885px;
+    height: 100px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 90px;
+}
