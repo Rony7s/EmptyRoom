@@ -18,12 +18,62 @@
         .titleApp {
             font-size: 40px;
             text-align: center;
-
             color: red;
-
             padding: 20px;
             background-color: #ddd;
             display: block;
+        }
+
+        .dwn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .dwn:hover {
+            background-color: RoyalBlue;
+        }
+
+
+
+        /* Style inputs with type="text", select elements and textareas */
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px; 
+            margin-bottom: 16px; 
+            resize: vertical ;
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Add a background color and some padding around the form */
+        .containerForm {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
         }
     </style>
 </head>
@@ -62,6 +112,14 @@
             <br>
             <h3>Help And Support</h3>
             <br>
+            <a class="dwn" href="reference/Final_Routine_July-2023_EdTech_8July2023.pdf"><i class="fa fa-download"></i>
+                Download EdTech Routine</a>
+            <a class="dwn" href="reference/Class-Routine-IOT.pdf"><i class="fa fa-download"></i> Download IRE
+                Routine</a>
+
+            <br>
+            <br>
+            <br>
             <h3>How to use it ...</h3>
             <iframe width="1000" height="563" src="https://www.youtube.com/embed/y87LBZMyG9k"
                 title="ScheduleMaster of BDU Help Demo" frameborder="1"
@@ -69,6 +127,38 @@
                 allowfullscreen></iframe>
         </div>
         <!-- footer start -->
+
+
+        <!-- feedback -->
+        <br>
+        <br>
+        <h2 style="text-align: center;">Give me A feedback</h2>
+        <div class="containerForm">
+            <form action=" ">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="sid">Student ID</label>
+                <input type="text" id="sid" name="studentId" placeholder="Your Student ID..">
+
+                <label for="Department">Department</label>
+                <select id="Department" name="Department">
+                    <option value="EdTech">EdTech</option>
+                    <option value="IRE">IRE</option>
+                    <option value="others">others</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
         <div class="row footer_area">
             <h2>ScheduleMaster of BDU</h2>
             <a style="text-decoration: none; color: white;" href="https://www.facebook.com/EdTech4">
@@ -78,6 +168,7 @@
             <p>Copyright © 2023 All Rights Reserved.</p>
         </div>
     </div>
+
 </body>
 
 </html>
