@@ -13,7 +13,7 @@ ScheduleMaster is designed to provide students, teachers, Clubs and staff with a
 - Identify Empty rooms for study sessions and meetings.
 - Stay updated on batch-specific class schedules in real-time.
 - Access comprehensive faculty profiles with contact information.
-
+-help and support
 ## Getting Started
 
 To access ScheduleMaster, follow these steps:
