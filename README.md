@@ -21,6 +21,7 @@ To access ScheduleMaster, follow these steps:
 1. Scan QR code
 <img width="300px" src="link.png" alt="QR code">
 2. Visit [ https://rony7s.github.io/EmptyRoom ].
+2. Visit 2024 [ https://rony7s.github.io/EmptyRoom/EmptyRoom2024].
 3. Browse through class schedules, room availability, and faculty profiles.
 
 ## Faculty Interaction
